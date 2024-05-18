@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    shape-outside: circle(50%);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#calculator {
+    background-color: hsl(0, 0%, 10%);
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 10px;
+
+}
+
+#display {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-size: 40px;
+    text-align: left;
+
+    outline: none;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow: hidden;
+}
+
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 30%);
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 50%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.operator-btn {
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
+
+
+@media only screen and (max-width:700px) {
+    button:active {
+        outline: 2px solid transparent;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+    }
+}
